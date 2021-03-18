@@ -107,6 +107,8 @@ namespace MatchGame
         {
             if (matchesFound == 8)
             {
+                List<string> resultsList=new List<string>();
+                resultsTextBox.Text += "\n" + timeTextBlock.Text.Substring(0, timeTextBlock.Text.IndexOf('-') - 1);
                 SetUpGame();
             }
         }
